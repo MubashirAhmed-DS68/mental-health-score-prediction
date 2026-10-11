@@ -1,0 +1,10 @@
+# Backend only. Imports in main.py: fastapi, pydantic, pandas, joblib (+ uvicorn to serve).
+# Mental_Health_Model.pkl was saved with scikit-learn 1.6.1 (found in the pickle metadata) and
+# numpy 2.x (it references numpy._core), so scikit-learn is pinned to match.
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+pydantic>=2.7,<3.0
+pandas>=2.2,<3.0
+numpy>=2.0,<3.0
+scikit-learn==1.6.1
+joblib>=1.4,<2.0
