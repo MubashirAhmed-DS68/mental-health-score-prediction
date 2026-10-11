@@ -22,7 +22,7 @@ app = FastAPI()
 top_country  =  ['Other', 'India', 'USA', 'Canada', 'Australia', 'UK', 'Germany','Mexico', 'Turkey', 'France']
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://https://mental-health-score-prediction-7ush.vercel.app/", "http://localhost:3000"],
     allow_methods=["*"],
     allow_headers=["*"]
 )
